@@ -8,23 +8,27 @@ void setup() {
   delay(10);
   Serial.println("SETUP!!!");
   Wire.begin(D2, D1);
+
   // set up the LCD's number of columns and rows:
   lcd.begin(40, 4);
   lcd.display();
-  // Print a message to the LCD.
+
+  // Print a messages to the LCD.
   lcd.print("0123456789012345678901234567890123456789");
+
+  String str1 = "https://github.com/";
+  lcd.setCursor((40 - str1.length()) / 2, 1);
+  lcd.print(str1);
+
+  String str2 = "gshimansky/LiquidCrystal_PCF8574_4004";
+  lcd.setCursor((40 - str2.length()) / 2, 2);
+  lcd.print(str2);
 }
 
 void loop() {
-  // set the cursor to column 0, line 1
-  // (note: line 1 is the second row, since counting begins with 0):
-  lcd.setCursor(0, 1);
   // print the number of seconds since reset:
-  lcd.print(millis() / 1000);
-  lcd.setCursor(0, 2);
-  lcd.print(millis() / 100);
   lcd.setCursor(0, 3);
-  lcd.print(millis() / 10);
+  lcd.print(millis() / 1000);
   delay(250);
   Serial.println(millis() / 1000);
 }
