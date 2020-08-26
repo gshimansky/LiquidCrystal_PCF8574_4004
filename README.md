@@ -50,9 +50,10 @@ Here are pins on my Surenoo SLC4004B LCD display:
 | 15         | EN2 (enable pin for bottom part of LCD) | PCF8574 P1 |
 
 My LCD doesn't have a backlight control by software, instead it has
-separate pins 17 and 18 which are used to supply power to
-backlight. If your LCD has backlight, you can use P3 of PCF8574 to
-connect it.
+separate pins 17 and 18 which are used to supply power to backlight. I
+connected them to +5V power through another 4.7 KOhm
+potenciomenter. If your LCD has backlight, you can use P3 of PCF8574
+to connect it.
 
 Databus connection found experimentally. I suppose some LCDs may use
 databus bigs 0-3 instead of 4-7. There is no standard for it.
