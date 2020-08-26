@@ -57,3 +57,5 @@ to connect it.
 
 Databus connection found experimentally. I suppose some LCDs may use
 databus bigs 0-3 instead of 4-7. There is no standard for it.
+
+![Example running](/.img/20200825_211837.jpg?raw=true "Example running")
