@@ -47,7 +47,7 @@ Here are pins on my Surenoo SLC4004B LCD display:
 | 12         | V0 | connected to ground through 4.7 KOhm potenciomenter |
 | 13         | Vss                                  | Grounded   |
 | 14         | Vdd                                  | +5V power  |
-| 15         | EN2 (enable pin for bottom part of LCD) | PCF8574 P1 |
+| 15         | EN2 (enable pin for bottom part of LCD) | PCF8574 P2 |
 
 My LCD doesn't have a backlight control by software, instead it has
 separate pins 17 and 18 which are used to supply power to backlight. I
